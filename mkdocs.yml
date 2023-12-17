@@ -1,0 +1,54 @@
+site_name: 【DESIGN CAFE】コーディングガイド
+theme:
+  name: "material"
+  custom_dir: overrides
+
+  palette:
+    primary: red
+    accent: red
+
+  features:
+    - navigation.tabs.sticky
+    - navigation.footer
+
+extra_css:
+  - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+  - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
+
+extra:
+  analytics:
+    provider: google
+    property: G-MREMGST625
+    feedback:
+      title: 役に立ちましたか?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            フィードバックをどうもありがとうございます！
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            フィードバックをどうもありがとうございます！
+            改善点がある場合、<a href="mailto:a@kotodute.jp" target="_blank" rel="noopener">メール</a>よりご連絡いただけますと幸いです。
+
+markdown_extensions:
+  - pymdownx.superfences
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - footnotes
+
+nav:
+  - はじめに: index.md
+  - コーディングの流れと注意事項: flow.md
+  - リセットCSSとサイトの骨組み: common.md
+  - 各セクションの実装: section.md
+  - スマホ版の実装（第5回課題）: sp.md
+
